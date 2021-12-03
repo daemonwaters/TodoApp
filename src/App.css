@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    width: 100vw;
+    height:100vh;
+    background:linear-gradient(to right,hsl(195,60%,40%),hsl(320,60%,40%));
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1{
+    text-align: center;
+    margin: 2rem 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+     color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+form{
+    text-align: center;
+    margin: 2rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+    width: 30%;
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 0 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
+
+.todo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    border: solid 1px;
+    margin: 0.5rem auto;
+    background: #fff;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    gap: 2rem;
+}
+
+
+.todo h2{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.btn{
+    margin-left: auto;
+}
+
+.btn button{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    transition: background ease-in 200ms;
+}
+
+.remove:hover{
+    background: red;
+}
+
+.remove:hover svg{
+    fill: #fff;
+}
+
+
+
+
+
+
+
